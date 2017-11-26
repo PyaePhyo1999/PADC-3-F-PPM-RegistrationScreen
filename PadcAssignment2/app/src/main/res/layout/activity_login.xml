@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <android.support.design.widget.AppBarLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:theme="@style/AppTheme.AppBarOverlay">
+
+     <android.support.v7.widget.Toolbar
+         app:title="Login"
+         android:layout_width="match_parent"
+         android:layout_height="?attr/actionBarSize"
+         app:popupTheme="?attr/actionBarSize"
+         android:background="@color/colorPrimary">
+
+     </android.support.v7.widget.Toolbar>
+ </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl_login"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">\
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_email_or_phone"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:textColorHint="@color/colorPrimary">
+        <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/et_email_or_phone"
+       android:hint="Email or Phone*"
+
+
+          />
+        </android.support.design.widget.TextInputLayout>
+ <android.support.design.widget.TextInputLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginRight="36dp"
+     android:layout_marginTop="10dp"
+     android:id="@+id/input_password"
+     android:layout_alignStart="@+id/input_email_or_phone"
+     android:layout_below="@+id/input_email_or_phone"
+     android:textColorHint="@color/colorPrimary">
+     <EditText
+         android:id="@+id/et_password"
+         android:inputType="textPassword"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+
+
+         android:hint="Password*"
+
+         android:drawableRight="@drawable/ic_visibility_black_24dp"
+
+         />
+ </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:layout_below="@id/input_password"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/White"
+            android:foreground="@drawable/ripple_while"/>
+        <TextView
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_forgot_password"
+            android:text="@string/btn_forgot_password"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignRight="@id/btn_login"
+            android:layout_below="@id/btn_login"
+            android:layout_marginTop="30dp"
+            android:foreground="@drawable/ripple_primary"
+            />
+        <View
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/btn_forgot_password"
+
+            android:id="@+id/tv_separator"
+            android:layout_marginTop="40dp"
+            android:background="#AAA"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/btn_new_user_or_register"
+            android:text="@string/btn_new_user_register"
+            android:layout_below="@id/tv_separator"
+            android:layout_alignRight="@id/btn_forgot_password"
+            android:layout_marginTop="40dp"
+            android:foreground="@drawable/ripple_primary"
+
+            />
+
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

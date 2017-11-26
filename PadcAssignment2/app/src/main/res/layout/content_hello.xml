@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.padcmyanmar.padcassignment2.HelloActivity"
+    tools:showIn="@layout/activity_hello">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello! My name is Pyae Phyo Maung"
+        android:id="@+id/tv_Hello"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimary"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You clicked at {timestamp}"
+        android:layout_below="@id/tv_Hello"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/tv_user_click_timestamp"
+        android:textColor="@color/colorAccent"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_click_me"
+        android:text="Click"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
